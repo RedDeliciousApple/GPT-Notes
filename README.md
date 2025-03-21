@@ -1,10 +1,6 @@
-## GitHub README
-
-```markdown
 # ChatGPT Global Bookmarker
 
 A lightweight bookmarklet to save and organize important ChatGPT responses across multiple conversations.
-
 
 ## 🌟 Features
 
@@ -17,18 +13,27 @@ A lightweight bookmarklet to save and organize important ChatGPT responses acros
 
 ## 🚀 Installation
 
-1. **Create a new bookmark in your browser:**
-   - Right-click on your bookmarks bar
-   - Select "Add page" or "New bookmark"
-   - Enter any name (e.g., "📌 ChatGPT Bookmarker")
-   - Paste the entire one-liner code into the URL/location field
-   - Save the bookmark
+### Desktop Browsers:
+1. Create a new bookmark in your browser
+2. Name it "ChatGPT Bookmarker" (or any name you prefer)
+3. Copy the entire code from [bookmarklet.js](bookmarklet.js) and paste it in the URL field
+4. Save the bookmark
 
-2. **Using the bookmarklet:**
-   - Visit [chat.openai.com](https://chat.openai.com)
-   - Click the bookmark you created
-   - A small panel will appear at the bottom left of your screen
-   - Click the 📌 pin icon next to any ChatGPT response to bookmark it
+### iPad/Mobile Setup:
+While bookmarklets sync across devices when using Chrome sync, mobile browsers have security restrictions that prevent running bookmarklets by simply tapping them.
+
+**For iPad/iOS users:**
+1. **Use Safari** (more bookmarklet-friendly than Chrome on iOS)
+2. Create a new bookmark in Safari
+3. Edit the bookmark and paste the entire JavaScript code into the URL field
+4. Visit chat.openai.com
+5. Tap the bookmark while on the ChatGPT page
+
+If that doesn't work:
+1. Copy the entire JavaScript code (starting with `javascript:`)
+2. Visit chat.openai.com in Safari
+3. Tap the address bar
+4. Paste the code and tap Go
 
 ## 📖 Usage
 
@@ -45,6 +50,7 @@ This bookmarklet works well on most conversations but may cause performance issu
 - Very long conversations (hundreds of messages)
 - Low-end devices with limited RAM/CPU
 - Browsers with many tabs open
+- Mobile devices with limited processing power
 
 If you experience lag, refresh the page and avoid using the tool on extremely large conversations.
 
@@ -57,7 +63,8 @@ If you experience lag, refresh the page and avoid using the tool on extremely la
 ## 🧰 Technical Details
 
 - Pure vanilla JavaScript, no dependencies
-- Works with Chrome, Edge, Brave, Firefox, and other modern browsers
+- Works with Chrome, Edge, Brave, Firefox, and Safari on desktop
+- Limited mobile support (see iPad/Mobile Setup)
 - CSP-compatible (no eval, no external scripts)
 - MutationObserver watches for new messages
 - Designed to maintain consistent state across multiple runs
@@ -68,5 +75,4 @@ MIT License - See LICENSE file for details
 
 ## 🙏 Acknowledgements
 
-Developed via CLAUDE and GPT-4o as a proof-of-concept for bookmarking ChatGPT messages without requiring a browser extension.
-```
+Developed as a proof-of-concept for bookmarking ChatGPT messages without requiring a browser extension.

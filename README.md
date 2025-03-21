@@ -16,8 +16,9 @@ A lightweight bookmarklet to save and organize important ChatGPT responses acros
 ### Desktop Browsers:
 1. Create a new bookmark in your browser
 2. Name it "ChatGPT Bookmarker" (or any name you prefer)
-3. Copy the entire code from [bookmarklet.js](bookmarklet.js) and paste it in the URL field
-4. Save the bookmark
+3. Copy the entire code from ![GPT-bookmarker](bookmarklet.js) and paste it in the URL field
+4. 
+5. Save the bookmark
 
 ### iPad/Mobile Setup:
 While bookmarklets sync across devices when using Chrome sync, mobile browsers have security restrictions that prevent running bookmarklets by simply tapping them.

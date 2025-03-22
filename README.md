@@ -1,4 +1,4 @@
-# ChatGPT Global Bookmarker
+# GPT-Notes
 
 A lightweight bookmarklet to save and organize important ChatGPT responses across multiple conversations.
 

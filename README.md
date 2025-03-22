@@ -58,6 +58,21 @@ This bookmarklet works well on most conversations but may cause performance issu
 
 If you experience lag, refresh the page and avoid using the tool on extremely large conversations. If you experience continued lag, copy paste this into the console and run it: (function(){if(window.ChatGPTCopyPasterActive){const e=document.getElementById("chatgpt-export-widget");e&&e.remove();window.ChatGPTCopyPasterActive=false}if(window.GPTNotesUI){const t=document.getElementById("gptnotes-panel-ui");t&&t.remove();window.GPTNotesUI=false;window.notesModeActive=false}document.querySelectorAll("[data-message-author-role]").forEach(e=>{e.style.outline="";e.style.cursor="";e.style.boxShadow=""});const n=document.querySelectorAll(".message-selection-checkbox");n.forEach(e=>e.remove())})();
 
+
+Known Performance Behavior (v1.1)
+Due to recent OpenAI UI transitions (March 2025), message rendering now includes animated containers and fade effects.
+When GPTNotes is active during long sessions, especially with stored HTML content, minor lag may occur.
+
+Running the cleanup/reset function reduces this significantly.
+
+Lag appears to be a combination of:
+
+OpenAI’s new interface rendering patterns
+
+Message DOM weight (including saved formatting)
+
+Accumulated event listeners or UI fragments left behind
+
 ## 🔒 Security & Privacy
 
 - All data is stored locally in your browser using localStorage
@@ -73,9 +88,6 @@ If you experience lag, refresh the page and avoid using the tool on extremely la
 - MutationObserver watches for new messages
 - Designed to maintain consistent state across multiple runs
 
-## 📝 License
-
-MIT License - See LICENSE file for details
 
 ## 🙏 Acknowledgements
 

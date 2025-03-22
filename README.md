@@ -56,7 +56,7 @@ This bookmarklet works well on most conversations but may cause performance issu
 - Browsers with many tabs open
 - Mobile devices with limited processing power
 
-If you experience lag, refresh the page and avoid using the tool on extremely large conversations.
+If you experience lag, refresh the page and avoid using the tool on extremely large conversations. If you experience continued lag, copy paste this into the console and run it: (function(){if(window.ChatGPTCopyPasterActive){const e=document.getElementById("chatgpt-export-widget");e&&e.remove();window.ChatGPTCopyPasterActive=false}if(window.GPTNotesUI){const t=document.getElementById("gptnotes-panel-ui");t&&t.remove();window.GPTNotesUI=false;window.notesModeActive=false}document.querySelectorAll("[data-message-author-role]").forEach(e=>{e.style.outline="";e.style.cursor="";e.style.boxShadow=""});const n=document.querySelectorAll(".message-selection-checkbox");n.forEach(e=>e.remove())})();
 
 ## 🔒 Security & Privacy
 

@@ -15,7 +15,7 @@ A lightweight bookmarklet to save and organize important ChatGPT responses acros
 
 ### Desktop Browsers:
 1. Create a new bookmark in your browser
-2. Name it "ChatGPT Bookmarker" (or any name you prefer)
+2. Name it "GPT-Notes" (or any name you prefer)
 3. Copy the entire code and paste it in the URL field:
 
 ```javascript

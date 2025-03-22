@@ -4,12 +4,12 @@ A lightweight bookmarklet to save and organize important ChatGPT responses acros
 
 ## 🌟 Features
 
-- **📌 Pin Important Responses:** Add bookmark pins to any ChatGPT response
-- **🌐 Works Globally:** Bookmarks persist across all your chats
-- **🔍 Search:** Filter bookmarks by content
-- **🗂️ Auto-Organization:** Bookmarks are grouped by conversation
+- **Save Important Responses:** Select and save any ChatGPT response as a note
+- **🌐 Works Globally:** Notes persist across all your chats
+- **🔍 Search:** Filter notes by key words
+- **🗂️ Auto-Organization:** Notes are grouped by conversation
 - **📋 Copy Support:** Copy formatted message content with a single click
-- **🗑️ Easy Management:** Delete bookmarks you no longer need
+- **🗑️ Easy Management:** Delete notes you no longer need
 
 ## 🚀 Installation
 
@@ -44,9 +44,9 @@ If that doesn't work:
 1. Visit [ChatGPT](https://chat.openai.com)
 2. Click the bookmark to activate the tool
 3. A panel will appear at the bottom left of the screen
-4. Click the 📌 pin icon next to any ChatGPT response to bookmark it
-5. Use the search bar to filter bookmarks
-6. Click 📋 to copy or 🗑️ to delete bookmarks
+4. Click any ChatGPT response to save it
+5. Use the search bar to filter notes
+6. Click 📋 to copy or 🗑️ to delete notes
 
 ## ⚠️ Performance Considerations
 
